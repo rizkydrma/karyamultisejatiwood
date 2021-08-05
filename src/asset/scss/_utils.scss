@@ -1,0 +1,17 @@
+@import 'colorVariables';
+
+/* Font Weight*/
+$weights: 300, 400, 500, 600, 700;
+@each $weight in $weights {
+  .w-#{$weight} {
+    font-weight: #{$weight};
+  }
+}
+
+/* Text Align */
+$aligns: left, center, right, justify;
+@each $align in $aligns {
+  .text-#{$align} {
+    text-align: #{$align};
+  }
+}
