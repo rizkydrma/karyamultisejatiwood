@@ -15,3 +15,48 @@ $aligns: left, center, right, justify;
     text-align: #{$align};
   }
 }
+
+/* Animation */
+@keyframes myMove {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes myMoves {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* Button */
+.btn-black {
+  background: $black;
+  color: $white;
+}
+.btn-green {
+  background: $primaryGreen;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($primaryGreen, 5);
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+.btn-lg {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
