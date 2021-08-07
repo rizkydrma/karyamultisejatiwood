@@ -6,6 +6,10 @@
 
 a {
   text-decoration: none;
+
+  &:hover {
+    color: #37c96f;
+  }
 }
 
 button {

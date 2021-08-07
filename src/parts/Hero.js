@@ -7,6 +7,7 @@ import 'swiper/swiper.scss';
 
 import ImageBareCore1 from 'asset/images/hero/barecore_1.jpg';
 import ImageBareCore2 from 'asset/images/hero/barecore_2.jpg';
+import ImageBareCore3 from 'asset/images/hero/barecore_3.jpg';
 import Artistic from 'asset/images/artistic.png';
 import Artistic2 from 'asset/images/artistic2.png';
 import Button from 'element/Button';
@@ -47,7 +48,7 @@ export default function Hero() {
             <img src={ImageBareCore2} alt="" className="hero_image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={ImageBareCore1} alt="" className="hero_image" />
+            <img src={ImageBareCore3} alt="" className="hero_image" />
           </SwiperSlide>
         </Swiper>
         <div className="rectangle-border"></div>

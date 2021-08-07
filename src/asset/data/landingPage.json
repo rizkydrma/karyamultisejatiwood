@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Blockboard",
+      "imageUrl": "/images/mostproducts/blockboard.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Barecore",
+      "imageUrl": "/images/mostproducts/barecore.gif"
+    },
+    {
+      "id": "3",
+      "name": "High Moisture Resistance (HMR)",
+      "imageUrl": "/images/mostproducts/hmr.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Medium Density Board (MDF)",
+      "imageUrl": "/images/mostproducts/mdf.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Plywood",
+      "imageUrl": "/images/mostproducts/plywood.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Polyester Blockboard - Single Face",
+      "imageUrl": "/images/mostproducts/polyester-blockboard.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Polyester Blockboard - Double Face",
+      "imageUrl": "/images/mostproducts/polyester-blockboard.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Polyester Plywood",
+      "imageUrl": "/images/mostproducts/polyester-plywood.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Film Plywood",
+      "imageUrl": "/images/mostproducts/film-plywood.jpg"
+    }
+  ]
+}

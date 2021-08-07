@@ -16,6 +16,12 @@ $aligns: left, center, right, justify;
   }
 }
 
+/* Margin Padding */
+.my-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* Animation */
 @keyframes myMove {
   0% {
@@ -56,7 +62,22 @@ $aligns: left, center, right, justify;
   }
 }
 
+.btn-shadow {
+  box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
 .btn-lg {
   border-radius: 5px;
   padding: 0.5rem 1rem;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.text-white {
+  color: $white;
 }

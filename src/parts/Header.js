@@ -6,6 +6,7 @@ export default function Header() {
   const [drawer, setDrawer] = useState(false);
 
   const onClick = () => {
+    document.body.classList.toggle('hidden');
     setDrawer(!drawer);
   };
 

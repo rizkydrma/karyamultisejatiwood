@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
@@ -15,15 +17,15 @@ export default function Button(props) {
   if (props.type === 'link') {
     if (props.isExternal) {
       return (
-        <Link
-          to={props.href}
+        <a
+          href={props.href}
           className={className.join(' ')}
           style={props.style}
+          rel={props.target === '_blank' ? undefined : 'noopener noreferrer'}
           target={props.target === '_blank' ? '_blank' : undefined}
-          rel={props.target === '_blank' ? 'noopener noreferrer' : undefined}
         >
           {props.children}
-        </Link>
+        </a>
       );
     } else {
       return (
