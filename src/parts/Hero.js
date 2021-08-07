@@ -1,8 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper';
+import { motion } from 'framer-motion';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/effect-fade/effect-fade.scss';
 import 'swiper/swiper.scss';
 
 import ImageBareCore1 from 'asset/images/hero/barecore_1.jpg';
@@ -13,12 +15,27 @@ import Artistic2 from 'asset/images/artistic2.png';
 import Button from 'element/Button';
 import BrandName from 'element/BrandName';
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, EffectFade]);
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
 
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero_left_content">
+      <motion.div
+        className="hero_left_content"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 1, duration: 1 }}
+      >
         <h2 className="tagline">
           <BrandName />, Wood Products and Outdoor Furniture Manufacturer
         </h2>
@@ -37,10 +54,16 @@ export default function Hero() {
         </Button>
         <img src={Artistic} alt="artistic" className="image-artistic" />
         <img src={Artistic2} alt="artistic" className="image-artistic2" />
-      </div>
+      </motion.div>
 
-      <div className="hero_right_content">
-        <Swiper navigation pagination>
+      <motion.div
+        className="hero_right_content"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 1.5, duration: 1 }}
+      >
+        <Swiper navigation pagination effect="fade" speed={500}>
           <SwiperSlide>
             <img src={ImageBareCore1} alt="" className="hero_image" />
           </SwiperSlide>
@@ -52,7 +75,7 @@ export default function Hero() {
           </SwiperSlide>
         </Swiper>
         <div className="rectangle-border"></div>
-      </div>
+      </motion.div>
     </section>
   );
 }

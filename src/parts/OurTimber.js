@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import ImageAlbasia from 'asset/images/hero/albasia.png';
 import ImageMeranti from 'asset/images/hero/meranti.png';
 
 export default function OurTimber() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
   return (
-    <section className="our_timber">
+    <motion.section
+      className="our_timber"
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      transition={{ duration: 1 }}
+      variants={{
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 },
+      }}
+    >
       <h1 className="text-center">Our Timber</h1>
       <div className="timber_container">
         <div className="timber">
@@ -36,6 +56,6 @@ export default function OurTimber() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

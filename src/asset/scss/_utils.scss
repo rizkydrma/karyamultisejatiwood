@@ -22,6 +22,10 @@ $aligns: left, center, right, justify;
   margin-bottom: 10px;
 }
 
+.mt-5 {
+  margin-top: 50px;
+}
+
 /* Animation */
 @keyframes myMove {
   0% {
@@ -80,4 +84,31 @@ $aligns: left, center, right, justify;
 
 .text-white {
   color: $white;
+}
+
+.title {
+  color: $black;
+  font-size: 1.75rem;
+  font-weight: 600;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: $black;
+  font-weight: 500;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+}
+
+.description {
+  color: $black;
+  font-size: 0.825rem;
+  margin: 10px 0;
 }

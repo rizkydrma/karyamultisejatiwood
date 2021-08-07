@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'element/Button';
+import { motion } from 'framer-motion';
+
 import ImageLogoGreen from 'asset/images/logo_green.png';
 
 export default function Header() {
@@ -13,7 +15,11 @@ export default function Header() {
   return (
     <nav className="navbar">
       <div className="navbar_expand">
-        <Button href="/" className={`brand_logo ${drawer ? 'open' : 'close'}`}>
+        <Button
+          type="link"
+          href="/"
+          className={`brand_logo ${drawer ? 'open' : 'close'}`}
+        >
           <img src={ImageLogoGreen} alt="logo hijau" className="image_logo" />
           <div className="brand_name">
             karyamulti<span>sejatiwood.com</span>
@@ -23,7 +29,17 @@ export default function Header() {
           <div className={`bar ${drawer ? 'close' : ''}`}></div>
         </div>
       </div>
-      <ul className={`navbar_nav ${drawer ? 'collapse' : ''}`}>
+      <motion.ul
+        className={`navbar_nav ${drawer ? 'collapse' : ''}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, type: 'spring', stifness: 10 }}
+      >
+        <li className="nav_item">
+          <Button type="link" href="/" className="nav_link">
+            Home
+          </Button>
+        </li>
         <li className="nav_item">
           <Button type="link" href="/about" className="nav_link">
             About Us
@@ -39,8 +55,7 @@ export default function Header() {
             Contact Us
           </Button>
         </li>
-      </ul>
-      <div className="animate"></div>
+      </motion.ul>
     </nav>
   );
 }
