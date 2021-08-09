@@ -59,7 +59,7 @@ export default function MostProducts({ data }) {
           ))}
         </Swiper>
       </div>
-      <div className="container-grid">
+      <div className="container-grid most-container">
         {data.map((product, i) => (
           <Button
             key={product.id}

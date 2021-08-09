@@ -1,5 +1,4 @@
 .container-grid {
-  display: none;
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
