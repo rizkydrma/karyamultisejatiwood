@@ -3,6 +3,7 @@ import AboutPage from 'pages/AboutPage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ContactPage from 'pages/ContactPage';
 import ProductsPage from 'pages/ProductsPage';
+import ProductsDetailPage from 'pages/ProductDetailPage';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/products">
           <ProductsPage />
+        </Route>
+        <Route path="/product/:id">
+          <ProductsDetailPage />
         </Route>
         <Route path="/contact">
           <ContactPage />

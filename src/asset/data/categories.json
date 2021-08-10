@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "slug": "all",
+    "name": "All Items"
+  },
+  {
+    "id": 2,
+    "slug": "barecore",
+    "name": "Barecore"
+  },
+  {
+    "id": 3,
+    "slug": "blockboard",
+    "name": "Blockboard"
+  },
+  {
+    "id": 4,
+    "slug": "plywood",
+    "name": "Plywood"
+  },
+  {
+    "id": 5,
+    "slug": "polyester-plywood",
+    "name": "Polyester Plywood"
+  },
+  {
+    "id": 6,
+    "slug": "phenolic-film-plywood",
+    "name": "Phenolic Film Plywood"
+  },
+  {
+    "id": 7,
+    "slug": "medium-density-board",
+    "name": "Medium Density Board"
+  },
+  {
+    "id": 8,
+    "slug": "high-moisture-resistance",
+    "name": "High Moisture Resistance"
+  }
+]

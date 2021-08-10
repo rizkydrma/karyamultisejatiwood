@@ -1,10 +1,13 @@
 import Header from 'parts/Header';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from 'element/Button';
 import { motion } from 'framer-motion';
 import ImageBarqode from 'asset/images/wa-barqode.png';
 
 export default function ContactPage() {
+  useEffect(() => {
+    document.body.classList.remove('hidden');
+  }, []);
   return (
     <>
       <Header />

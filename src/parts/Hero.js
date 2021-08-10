@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper';
 import { motion } from 'framer-motion';
 import 'asset/scss/swiper.scss';
-import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/effect-fade/effect-fade.scss';
 import 'swiper/swiper.scss';
 

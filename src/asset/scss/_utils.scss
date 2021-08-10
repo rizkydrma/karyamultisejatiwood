@@ -70,6 +70,7 @@ $aligns: left, center, right, justify;
   &:hover {
     background-color: lighten($primaryGreen, 5);
     transition: 0.3s all ease-in-out;
+    color: $white;
   }
 }
 
@@ -80,6 +81,17 @@ $aligns: left, center, right, justify;
 .btn-lg {
   border-radius: 5px;
   padding: 0.5rem 1rem;
+}
+.btn-sm {
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.725rem;
+  text-align: center;
+  margin: 10px 0;
+
+  i {
+    margin: 0 5px;
+  }
 }
 
 .img-cover {

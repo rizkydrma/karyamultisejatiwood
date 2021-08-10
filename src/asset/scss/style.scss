@@ -662,26 +662,53 @@ body {
 }
 
 .card {
-  padding: 20px;
   background-color: darken($white, 2);
   border-radius: 10px;
   box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
 
-  &:hover {
-    background-color: $primaryGreen;
-    transition: 0.3s all ease-in-out;
+.product_list {
+  padding: 0 32px;
+  gap: 30px;
 
-    i {
-      color: $white;
+  @media (min-width: 768px) {
+    padding: 0 32px 0 0;
+  }
+
+  .container-product {
+    padding: 0;
+    gap: 30px;
+  }
+
+  .card_product {
+    position: relative;
+    min-height: 400px;
+  }
+
+  .meta-wrapper {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 15px;
+
+    .description {
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      overflow: hidden;
+      max-height: 3em;
+      line-height: 1.5em;
+      font-size: 0.8rem;
     }
-
-    .subtitle {
-      color: $white;
+    .container-grid {
+      padding: 0;
+      margin: 0;
     }
   }
 }
 
-.product_list {
-  padding: 0 32px 0 0;
-  gap: 30px;
+.product_detail {
+  .big-image {
+    margin: 10px 0;
+    padding: 0;
+  }
 }

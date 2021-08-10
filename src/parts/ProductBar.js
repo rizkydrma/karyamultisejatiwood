@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Button from 'element/Button';
+import categories from 'asset/data/categories.json';
 
-export default function ProductBar() {
+export default function ProductBar({ selectItem }) {
   const [dropdown, setDropdown] = useState(false);
+  const [active, setActive] = useState('all');
 
   const onClick = () => {
     setDropdown(!dropdown);
   };
-  useEffect(() => {});
+
   return (
     <div className="product_bar">
       <Button
@@ -19,60 +21,25 @@ export default function ProductBar() {
       </Button>
       <div className={`product_items ${dropdown ? 'open' : ''}`}>
         <ul>
-          <li className="product_item">
-            <Button type="link" href="/product">
-              <i className="fas fa-tree"></i>
-              All Items
-            </Button>
-          </li>
-          <li className="product_item">
-            <Button type="link" href="/product">
-              <i className="fas fa-tree"></i>
-              Barecore
-            </Button>
-          </li>
-          <li className="product_item">
-            <Button type="link" href="/product">
-              <i className="fas fa-tree"></i>
-              Blockboard
-            </Button>
-          </li>
-          <li className="product_item">
-            <Button type="link" href="/product">
-              <i className="fas fa-tree"></i>
-              Polyester Blockboard
-            </Button>
-          </li>
-          <li className="product_item">
-            <Button type="link" href="/product">
-              <i className="fas fa-tree"></i>
-              Plywood
-            </Button>
-          </li>
-          <li className="product_item">
-            <Button type="link" href="/product">
-              <i className="fas fa-tree"></i>
-              Polyester Plywood
-            </Button>
-          </li>
-          <li className="product_item">
-            <Button type="link" href="/product">
-              <i className="fas fa-tree"></i>
-              Phenolic Film Plywood
-            </Button>
-          </li>
-          <li className="product_item">
-            <Button type="link" href="/product">
-              <i className="fas fa-tree"></i>
-              Medium Density Board (MDB)
-            </Button>
-          </li>
-          <li className="product_item">
-            <Button type="link" href="/product">
-              <i className="fas fa-tree"></i>
-              High Moisture Resistance (HMR)
-            </Button>
-          </li>
+          {categories.map((category, i) => (
+            <li
+              className={`product_item ${
+                category.slug === active ? 'active' : ''
+              }`}
+              key={i}
+            >
+              <Button
+                onClick={() => {
+                  selectItem(category);
+                  setActive(category.slug);
+                }}
+                className="product_link"
+              >
+                <i className="fas fa-tree"></i>
+                {category.name}
+              </Button>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from 'parts/Header';
 import Footer from 'parts/Footer';
 import ProductList from 'parts/ProductList';
 
+import products from 'asset/data/products.json';
+
 export default function ProductsPage() {
+  useEffect(() => {
+    document.body.classList.remove('hidden');
+  }, []);
   return (
     <>
       <Header />
-      <ProductList />
+      <ProductList data={products.products} />
       <Footer />
     </>
   );
