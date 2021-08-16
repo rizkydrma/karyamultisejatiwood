@@ -3,7 +3,12 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, EffectCoverflow } from 'swiper';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  EffectCoverflow,
+  Autoplay,
+} from 'swiper';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/swiper.scss';
@@ -11,7 +16,7 @@ import 'swiper/swiper.scss';
 import Button from 'element/Button';
 import SkeletonCard from 'skeletons/SkeletonCard';
 
-SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
+SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay]);
 
 export default function MostProducts({ products }) {
   const controls = useAnimation();
@@ -44,7 +49,13 @@ export default function MostProducts({ products }) {
       </motion.h1>
 
       <div className="slider">
-        <Swiper navigation pagination effect="coverflow">
+        <Swiper
+          navigation
+          pagination
+          effect="coverflow"
+          loop={true}
+          autoplay={true}
+        >
           {data &&
             data.map((product, i) => (
               <SwiperSlide key={product.id}>

@@ -31,7 +31,7 @@ $colors: (
   &:after {
     font-weight: 900;
     font-family: 'Font Awesome 5 Free';
-    color: #006837;
+    color: #fff;
     font-size: 1.5rem;
   }
   &:hover {
@@ -139,7 +139,7 @@ $colors: (
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #006837;
+  background: #fff;
 }
 
 .swiper-container-vertical {

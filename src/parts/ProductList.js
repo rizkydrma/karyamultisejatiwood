@@ -28,7 +28,7 @@ export default function ProductList({ data }) {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.5 }}
-              className="item column-4 row-1 card card_product"
+              className="item column-4 row-1 card card_product mt-3"
               key={product.id}
             >
               <figure className="image-wrapper">

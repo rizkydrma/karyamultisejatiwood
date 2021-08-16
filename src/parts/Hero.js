@@ -1,6 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  EffectFade,
+  Autoplay,
+} from 'swiper';
 import { motion } from 'framer-motion';
 import 'asset/scss/swiper.scss';
 import 'swiper/components/effect-fade/effect-fade.scss';
@@ -14,7 +19,7 @@ import Artistic2 from 'asset/images/artistic2.png';
 import Button from 'element/Button';
 import BrandName from 'element/BrandName';
 
-SwiperCore.use([Navigation, Pagination, EffectFade]);
+SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 const containerVariants = {
   hidden: {
@@ -63,7 +68,14 @@ export default function Hero() {
         animate="visible"
         transition={{ delay: 1.5, duration: 1 }}
       >
-        <Swiper navigation pagination effect="fade" speed={500}>
+        <Swiper
+          navigation
+          pagination
+          effect="fade"
+          speed={500}
+          loop={true}
+          autoplay={{ delay: 1500 }}
+        >
           <SwiperSlide>
             <img src={ImageBareCore1} alt="" className="hero_image" />
           </SwiperSlide>

@@ -76,15 +76,21 @@ export default function Footer() {
         </Button>
         <div className="telp my-1">
           <i className="fas fa-phone-alt"></i>
-          +62 22 2006541
+          <a className="text-white" href="tel:+62222006541">
+            +62 22 2006541
+          </a>
         </div>
         <div className="telp my-1">
           <i className="fas fa-phone-alt"></i>
-          +62 22 2006597
+          <a className="text-white" href="tel:++62222006597">
+            +62 22 2006597
+          </a>
         </div>
         <div className="telp my-1">
           <i className="fab fa-whatsapp"></i>
-          +62 22 2006597
+          <a className="text-white" href="https://wa.me/6287777116685">
+            +62 8777 7116 685
+          </a>
         </div>
         <div className="email">
           <i className="fas fa-envelope"></i>

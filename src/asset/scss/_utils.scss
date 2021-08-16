@@ -198,8 +198,10 @@ $aligns: left, center, right, justify;
 }
 .description-2 {
   color: $black;
-  font-size: 0.925rem;
+  font-size: 0.975rem;
   margin: 10px 0;
+  line-height: 1.75;
+  max-width: 520px;
 }
 
 .text-primary {

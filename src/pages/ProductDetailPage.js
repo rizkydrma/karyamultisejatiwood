@@ -27,7 +27,7 @@ export default function ProductDetailPage() {
   return (
     <>
       <Header />
-      <section className="product_detail">
+      <section className="product_detail mt-3">
         <div className="container-grid container-product-detail">
           <div className="item column-5 row-1">
             <SliderDetail data={Product} />
@@ -37,7 +37,7 @@ export default function ProductDetailPage() {
               initial={{ opacity: 0, x: 300 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 1.25 }}
-              className="title sm-center mt-3"
+              className="title sm-center"
             >
               {Product.name}
             </motion.h1>
@@ -66,7 +66,7 @@ export default function ProductDetailPage() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 2 }}
-                className="description"
+                className="description-2 mt-3"
               >
                 {Product.description}
               </motion.p>
@@ -77,7 +77,7 @@ export default function ProductDetailPage() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="spec"
+                className="spec mt-3"
               >
                 <div className="description w-600 ">1. Composition</div>
                 <div className="ml-1">

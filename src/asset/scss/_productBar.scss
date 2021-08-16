@@ -12,9 +12,13 @@
   font-weight: 500;
 
   @media (min-width: 768px) {
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     font-weight: 300;
+
+    i {
+      display: none;
+    }
   }
 }
 .product_items {
@@ -42,7 +46,9 @@
 
   @media (min-width: 768px) {
     margin-top: 10px;
-
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
     position: relative;
     top: 0;
     left: 0;
