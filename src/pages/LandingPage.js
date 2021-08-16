@@ -9,6 +9,7 @@ import landingPage from 'asset/data/landingPage.json';
 
 export default function LandingPage() {
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.body.classList.remove('hidden');
   }, []);
   return (

@@ -1,7 +1,7 @@
 import Footer from 'parts/Footer';
 import Header from 'parts/Header';
 import SliderDetail from 'parts/SliderDetail';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import products from 'asset/data/products.json';
 import { motion } from 'framer-motion';
@@ -10,6 +10,11 @@ export default function ProductDetailPage() {
   const [accordion, setAccordion] = useState(true);
   const { id } = useParams();
   const dataProducts = products.products;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.body.classList.remove('hidden');
+  }, []);
 
   const onClick = () => {
     setAccordion(!accordion);

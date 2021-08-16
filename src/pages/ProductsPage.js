@@ -7,6 +7,7 @@ import products from 'asset/data/products.json';
 
 export default function ProductsPage() {
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.body.classList.remove('hidden');
   }, []);
   return (

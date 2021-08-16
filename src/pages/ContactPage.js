@@ -6,6 +6,7 @@ import ImageBarqode from 'asset/images/wa-barqode.png';
 
 export default function ContactPage() {
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.body.classList.remove('hidden');
   }, []);
   return (
