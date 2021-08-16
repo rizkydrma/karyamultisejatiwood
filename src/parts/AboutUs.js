@@ -50,15 +50,11 @@ export default function AboutUs() {
         >
           <h1 className="title">About Us</h1>
           <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequuntur commodi asperiores alias aspernatur, quibusdam natus
-            veritatis magni tempora labore iure id minus rerum facilis. Ad
-            blanditiis inventore beatae accusantium cum.
-          </p>
-          <p className="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            doloremque totam deserunt obcaecati fugit aperiam aspernatur magni
-            fuga consequatur corrupti?
+            CV Karya Multi Sejati is a factory company for Timber, Barecore,
+            Blockboard and Plywood. CV Karya Multi Sejati located in west Java
+            Indonesia. Our Company as a wood manufacturer, Was built in 2000.
+            The Company mainly produces as Falcata Albasia (sengon Indonesia)
+            Wood. Capacity: 3000 M3/Month Bare core, Block board and Plywood.
           </p>
         </motion.div>
 

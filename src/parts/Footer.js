@@ -21,42 +21,42 @@ export default function Footer() {
         <h2 className="w-500 my-1">Products</h2>
         <ul>
           <li className="item_product">
-            <Button type="link" className="text-white" href="/product">
+            <Button type="link" className="text-white" href="/product/1">
               Barecore
             </Button>
           </li>
           <li className="item_product">
-            <Button type="link" className="text-white" href="/product">
+            <Button type="link" className="text-white" href="/product/2">
               Blockboard
             </Button>
           </li>
           <li className="item_product">
-            <Button type="link" className="text-white" href="/product">
+            <Button type="link" className="text-white" href="/product/3">
               Polyester Blockboard
             </Button>
           </li>
           <li className="item_product">
-            <Button type="link" className="text-white" href="/product">
+            <Button type="link" className="text-white" href="/product/5">
               Plywood
             </Button>
           </li>
           <li className="item_product">
-            <Button type="link" className="text-white" href="/product">
+            <Button type="link" className="text-white" href="/product/6">
               Polyester Plywood
             </Button>
           </li>
           <li className="item_product">
-            <Button type="link" className="text-white" href="/product">
+            <Button type="link" className="text-white" href="/product/7">
               Phenolic Film Plywood
             </Button>
           </li>
           <li className="item_product">
-            <Button type="link" className="text-white" href="/product">
+            <Button type="link" className="text-white" href="/product/8">
               Medium Density Board (MDB)
             </Button>
           </li>
           <li className="item_product">
-            <Button type="link" className="text-white" href="/product">
+            <Button type="link" className="text-white" href="/product/9">
               High Moisture Resistance (HMR)
             </Button>
           </li>

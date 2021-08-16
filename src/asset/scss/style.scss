@@ -711,4 +711,10 @@ body {
     margin: 10px 0;
     padding: 0;
   }
+
+  .small-image {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

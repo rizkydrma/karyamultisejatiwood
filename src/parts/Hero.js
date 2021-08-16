@@ -39,8 +39,9 @@ export default function Hero() {
           <BrandName />, Wood Products and Outdoor Furniture Manufacturer
         </h2>
         <h5 className="slug">
-          Barecore, Blockboard, Polyester Blockboard, Film Polywood and many
-          more. We are based in Jl Cipedes Tengah No. 194 Bandung, West Java.
+          CV Karya Multi Sejati is a factory company for Timber, Barecore,
+          Blockboard and Plywood. CV Karya Multi Sejati located in west Java
+          Indonesia.
         </h5>
         <Button
           href="/products"

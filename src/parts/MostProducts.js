@@ -43,7 +43,7 @@ export default function MostProducts({ data }) {
             <SwiperSlide key={product.id}>
               <Button
                 type="link"
-                href="/products/plywood"
+                href={`/product/${product.id}`}
                 className="text-white"
               >
                 <figure className="img-wrapper">

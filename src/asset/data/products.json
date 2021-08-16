@@ -6,22 +6,29 @@
       "name": "Barecore/Lumber Core",
       "imageUrl": "/images/products/barecore/barecore_1.png",
       "description": "Bare core is one of the main product that is produced out of Albasia Falcata (Sengon) in Indonesia. The bare core board consists of dull glued pieces with a finger jointed frame to make a more stable and strong panel. Standard sizes are produced referred to the domiciles standards.",
-      "spec": [
-        {
-          "woodSpecies": "Albasian Falcata (Sengon)"
+      "spec": {
+        "compositionCore": { "woodSpecies": "Falcata Allbizia (SoftWood)" },
+        "weight": "±13KG",
+        "dimension": {
+          "length": "2440MM",
+          "with": "1220MM",
+          "thicknes": "13.2 MM",
+          "tolerance": "±0.1 MM"
         },
-        {
-          "thicknes": "13/18"
-        },
-        {
-          "boardSize": "1220x2440"
-        },
-        {
-          "glue": "PVAC (Polyvinyl Acetate)"
-        },
-        {
-          "quality": "Visual Quality Standards from Grade A-C"
-        }
+        "glue": "PVAC (Polyvinyl Acetate)",
+        "grade": [
+          "Grade A (Face And Back Good Condition Smooth",
+          "Grade B (Face Smooth And Back Not Smooth)"
+        ],
+        "payment": ["LC at Sight (recommended)", "T/T before Loading"]
+      },
+      "images": [
+        "/images/products/barecore/barecore_1.png",
+        "/images/products/barecore/barecore_2.jpg",
+        "/images/products/barecore/barecore_3.jpg",
+        "/images/products/barecore/barecore_4.jpg",
+        "/images/products/barecore/barecore_5.jpg",
+        "/images/products/barecore/barecore_6.jpg"
       ]
     },
     {
@@ -30,46 +37,77 @@
       "category": "blockboard",
       "imageUrl": "/images/products/blockboard/blockboard_1.png",
       "description": "Blockboard is a 3 layer plywood. It is made from solid blocks of wood (barecore) as its core, sandwiched between layers of wood veneer. It has lesser tendency to bend and it has nail and screw holding power. It is very suitable for building and furniture material. Blocckboard is finely sanded on both sides so end users can easily glue decorative veneer on top of the platform. This is made of 100% Albasia. Standard sizes are produced referred to the domiciles standards.",
-      "spec": [
-        {
-          "woodSpecies": "Core : Albasian Falcata (Sengon),Decklayer : Albasian Falcata (Sengon)"
+      "spec": {
+        "compositionCore": {
+          "woodSpecies": "Falcata Allbizia (SoftWood)",
+          "composition": "Barecore 13MM (1PLY)",
+          "sanding": "All Sandered Calibration"
         },
-        {
-          "thicknes": "15/18"
+        "compositionFaceBack": {
+          "woodSpecies": "Falcata Allbizia (Softwood) Light Brown Color",
+          "composition": "Face (1 PLY) UP, Back (1 PLY) BOTTOM",
+          "sanding": "Both Face And Back Sandered Finishing",
+          "totalPly": "3 Plies"
         },
-        {
-          "boardSize": "1220x2440"
+        "weight": "±18KG",
+        "dimension": {
+          "length": "2440MM",
+          "with": "1220MM",
+          "thicknes": "15/18 MM",
+          "tolerance": "±0.3 MM"
         },
-        {
-          "glue": "PVAC (Polyvinyl Acetate)"
-        },
-        {
-          "quality": "Visual Quality Standards from Grade A-C"
-        }
+        "glue": "PVAC (Polyvinyl Acetate)",
+        "grade": [
+          "UTY BTR/Regular BCC (Middle East Market)",
+          "UTY/Local BBCC (Middle East Market)"
+        ],
+        "payment": ["LC at Sight (recommended)", "T/T before Loading"]
+      },
+      "images": [
+        "/images/products/blockboard/blockboard_1.png",
+        "/images/products/blockboard/blockboard_2.jpg",
+        "/images/products/blockboard/blockboard_3.jpg",
+        "/images/products/blockboard/blockboard_4.jpg",
+        "/images/products/blockboard/blockboard_5.jpg"
       ]
     },
+
     {
       "id": 3,
       "name": "Polyester Blockboard - Single Face",
       "category": "polyester-blockboard",
       "imageUrl": "/images/products/polyester_blockboard/polyester_blockboard_single.png",
       "description": "Polyester blockboard is constructed from a manufactured wood substrate that has been covered in polyester laminate. The polyester resin gives these others materials a very durable and attractive finish.",
-      "spec": [
-        {
-          "woodSpecies": "Core : Albasian Falcata (Sengon),Decklayer : Albasian Falcata (Sengon)"
+      "spec": {
+        "compositionCore": {
+          "woodSpecies": "Falcata Allbizia (SoftWood)",
+          "composition": "Barecore 13MM (1PLY)",
+          "sanding": "All Sandered Calibration"
         },
-        {
-          "thicknes": "15/18"
+        "compositionFaceBack": {
+          "woodSpecies": ["Falcata Allbizia (Softwood) Light Brown Color"],
+          "composition": "Face (1 PLY) UP, Back (1 PLY) BOTTOM",
+          "sanding": "Both Face And Back Sandered Finishing",
+          "totalPly": "3 Plies"
         },
-        {
-          "boardSize": "1220x2440"
+        "weight": ["±18KG"],
+        "dimension": {
+          "length": "2440MM",
+          "with": "1220MM",
+          "thicknes": "15/18 MM",
+          "tolerance": "±0.3 MM"
         },
-        {
-          "glue": "PVAC (Polyvinyl Acetate)"
-        },
-        {
-          "quality": "Visual Quality Standards from Grade A-C"
-        }
+        "glue": "PVAC (Polyvinyl Acetate)",
+        "grade": [
+          "UTY BTR/Regular BCC (Middle East Market)",
+          "UTY/Local BBCC (Middle East Market)"
+        ],
+        "payment": ["LC at Sight (recommended)", "T/T before Loading"]
+      },
+      "images": [
+        "/images/products/polyester_blockboard/polyester_blockboard_single.png",
+        "/images/products/polyester_blockboard/polyester_blockboard_1.jpg",
+        "/images/products/polyester_blockboard/polyester_blockboard_2.jpg"
       ]
     },
     {
@@ -78,22 +116,37 @@
       "category": "polyester-blockboard",
       "imageUrl": "/images/products/polyester_blockboard/polyester_blockboard_double.png",
       "description": "Polyester blockboard is constructed from a manufactured wood substrate that has been covered in polyester laminate. The polyester resin gives these others materials a very durable and attractive finish.",
-      "spec": [
-        {
-          "woodSpecies": "Core : Albasian Falcata (Sengon),Decklayer : Albasian Falcata (Sengon)/POLYESTER"
+      "spec": {
+        "compositionCore": {
+          "woodSpecies": "Falcata Allbizia (SoftWood)",
+          "composition": "Barecore 13MM (1PLY)",
+          "sanding": "All Sandered Calibration"
         },
-        {
-          "thicknes": "15/18"
+
+        "compositionFaceBack": {
+          "woodSpecies": ["Falcata Allbizia (Softwood) Light Brown Color"],
+          "composition": "Face (1 PLY) UP, Back (1 PLY) BOTTOM",
+          "sanding": "Both Face And Back Sandered Finishing",
+          "totalPly": "3 Plies"
         },
-        {
-          "boardSize": "1220x2440"
+        "weight": ["±18KG"],
+        "dimension": {
+          "length": "2440MM",
+          "with": "1220MM",
+          "thicknes": "15/18 MM",
+          "tolerance": "±0.3 MM"
         },
-        {
-          "glue": "PVAC (Polyvinyl Acetate)"
-        },
-        {
-          "quality": "Visual Quality Standards from Grade A-C"
-        }
+        "glue": "PVAC (Polyvinyl Acetate)",
+        "grade": [
+          "UTY BTR/Regular BCC (Middle East Market)",
+          "UTY/Local BBCC (Middle East Market)"
+        ],
+        "payment": ["LC at Sight (recommended)", "T/T before Loading"]
+      },
+      "images": [
+        "/images/products/polyester_blockboard/polyester_blockboard_single.png",
+        "/images/products/polyester_blockboard/polyester_blockboard_1.jpg",
+        "/images/products/polyester_blockboard/polyester_blockboard_2.jpg"
       ]
     },
     {
@@ -102,22 +155,43 @@
       "category": "plywood",
       "imageUrl": "/images/products/plywood/plywood_1.png",
       "description": "Plywood is one of the main product that is produced out of Albasia Falcata (Sengon) in Indonesia. The plywood consists out of at least three layers of veneer. These layers are cross-laminated to each other. This leads to a homogenization of the product what provides a better volume stability and less directional dependency. It is high strength sheet material and it has resistance to cracking, shrinkage, twisting and warping. It has wide range of applications in building structures, exterior, interior, etc. Standard sizes are produced referred to the domiciles standards.",
-      "spec": [
-        {
-          "woodSpecies": "Core : Albasian Falcata (Sengon),Decklayer : Albasian Falcata (Sengon)"
+      "spec": {
+        "compositionCore": {
+          "woodSpecies": "Falcata Allbizia (SoftWood)",
+          "composition": "Long Core And Short Core",
+          "sanding": "All Sandered Calibration"
         },
-        {
-          "thicknes": "3 / 4 / 6 / 9 / 12 / 15 / 18 "
+
+        "compositionFaceBack": {
+          "woodSpecies": [
+            "Meranti Indonesia (HardWood) RED/BROWN Color",
+            "Falcata Allbizia (Softwood) Light Brown Color"
+          ],
+          "composition": "Face (1 PLY) UP, Back (1 PLY) BOTTOM",
+          "sanding": "Both Face And Back Sandered Finishing",
+          "totalPly": "3/5/7 Plies (Depend On The Thickness)"
         },
-        {
-          "boardSize": "1220x2440"
+
+        "weight": ["±5KG (4.6MM", "±8KG (7.5MM)", "±9KG (9.0MM)"],
+        "dimension": {
+          "length": "2440MM",
+          "with": "1220MM",
+          "thicknes": "4.5/7.5/9.0 MM Etc.",
+          "tolerance": "±0.1 MM"
         },
-        {
-          "glue": "PVAC (Polyvinyl Acetate)"
-        },
-        {
-          "quality": "Visual Quality Standards from Grade A-C"
-        }
+        "glue": "PVAC (Polyvinyl Acetate)",
+        "grade": [
+          "UTY BTR/Regular BCC (Middle East Market)",
+          "UTY/Local BBCC (Middle East Market)"
+        ],
+        "payment": ["LC at Sight (recommended)", "T/T before Loading"]
+      },
+      "images": [
+        "/images/products/plywood/plywood_1.png",
+        "/images/products/plywood/plywood_2.jpg",
+        "/images/products/plywood/plywood_3.jpg",
+        "/images/products/plywood/plywood_4.jpg",
+        "/images/products/plywood/plywood_5.jpg"
       ]
     },
     {
@@ -126,22 +200,40 @@
       "category": "polyester-plywood",
       "imageUrl": "/images/products/polyester_plywood/polyester_plywood_1.png",
       "description": "Polyester Plywood is constructed from a manufactured wood substrate that has been covered in polyester laminate. The polyester resin gives these others materials a very durable and attractive finish.",
-      "spec": [
-        {
-          "woodSpecies": "Core : Albasian Falcata (Sengon),Decklayer : Albasian Falcata (Sengon)/POLYESTER"
+      "spec": {
+        "composition": {
+          "woodSpecies": "Falcata Allbizia (SoftWood)",
+          "composition": "Long Core And Short Core",
+          "sanding": "All Sandered Calibration"
         },
-        {
-          "thicknes": "6 / 9 / 12 / 15 / 18"
+
+        "compositionFaceBack": {
+          "woodSpecies": [
+            "Meranti Indonesia (HardWood) RED/BROWN Color",
+            "Falcata Allbizia (Softwood) Light Brown Color"
+          ],
+          "composition": "Face (1 PLY) UP, Back (1 PLY) BOTTOM",
+          "sanding": "Both Face And Back Sandered Finishing",
+          "totalPly": "3/5/7 Plies (Depend On The Thickness)"
         },
-        {
-          "boardSize": "1220x2440"
+
+        "weight": ["±5KG (4.6MM", "±8KG (7.5MM)", "±9KG (9.0MM)"],
+        "dimension": {
+          "length": "2440MM",
+          "with": "1220MM",
+          "thicknes": "4.5/7.5/9.0 MM Etc.",
+          "tolerance": "±0.1 MM"
         },
-        {
-          "glue": "PVAC (Polyvinyl Acetate)"
-        },
-        {
-          "quality": "Visual Quality Standards from Grade A-C"
-        }
+        "glue": "PVAC (Polyvinyl Acetate)",
+        "grade": [
+          "UTY BTR/Regular BCC (Middle East Market)",
+          "UTY/Local BBCC (Middle East Market)"
+        ],
+        "payment": ["LC at Sight (recommended)", "T/T before Loading"]
+      },
+      "images": [
+        "/images/products/polyester_plywood/polyester_plywood_1.png",
+        "/images/products/polyester_plywood/polyester_plywood_2.jpg"
       ]
     },
     {
@@ -150,22 +242,40 @@
       "category": "phenolic-film-plywood",
       "imageUrl": "/images/products/phenolic_film_plywood/phenolic_film_plywood_1.png",
       "description": "Phenolic Film Plywood is constructed from a manufactured wood substrate that has been covered in phenolic film.",
-      "spec": [
-        {
-          "woodSpecies": "Core : Albasian Falcata (Sengon),Decklayer : Albasian Falcata (Sengon)/POLYESTER"
+      "spec": {
+        "compositionCore": {
+          "woodSpecies": "Falcata Allbizia (SoftWood)",
+          "composition": "Long Core And Short Core",
+          "sanding": "All Sandered Calibration"
         },
-        {
-          "thicknes": "6 / 9 / 12 / 15 / 18"
+
+        "compositionFaceBack": {
+          "woodSpecies": [
+            "Meranti Indonesia (HardWood) RED/BROWN Color",
+            "Falcata Allbizia (Softwood) Light Brown Color"
+          ],
+          "composition": "Face (1 PLY) UP, Back (1 PLY) BOTTOM",
+          "sanding": "Both Face And Back Sandered Finishing",
+          "totalPly": "3/5/7 Plies (Depend On The Thickness)"
         },
-        {
-          "boardSize": "1220x2440"
+        "weight": ["±5KG (4.6MM", "±8KG (7.5MM)", "±9KG (9.0MM)"],
+        "dimension": {
+          "length": "2440MM",
+          "with": "1220MM",
+          "thicknes": "4.5/7.5/9.0 MM Etc.",
+          "tolerance": "±0.1 MM"
         },
-        {
-          "glue": "PVAC (Polyvinyl Acetate)"
-        },
-        {
-          "quality": "Visual Quality Standards from Grade A-C"
-        }
+        "glue": "PVAC (Polyvinyl Acetate)",
+        "grade": [
+          "UTY BTR/Regular BCC (Middle East Market)",
+          "UTY/Local BBCC (Middle East Market)"
+        ],
+        "payment": ["LC at Sight (recommended)", "T/T before Loading"]
+      },
+      "images": [
+        "/images/products/phenolic_film_plywood/phenolic_film_plywood_1.png",
+        "/images/products/phenolic_film_plywood/phenolic_film_plywood_2.jpg",
+        "/images/products/phenolic_film_plywood/phenolic_film_plywood_3.jpg"
       ]
     },
     {
@@ -174,22 +284,24 @@
       "category": "medium-density-board",
       "imageUrl": "/images/products/medium_density_board/medium_density_board_1.png",
       "description": "Medium Density Board (MDF) is a processed wood material made from a collection of wood with a small diameter. The collection of small diameter wood is then washed, then boiled at a certain temperature to form paper pulp. Next, the pulp is glued and waxed.",
-      "spec": [
-        {
-          "woodSpecies": "Core : Albasian Falcata (Sengon),Decklayer : Albasian Falcata (Sengon)/POLYESTER"
+      "spec": {
+        "compositionCore": { "woodSpecies": "Falcata Allbizia (SoftWood)" },
+        "weight": ["±9KG"],
+        "dimension": {
+          "length": "2440MM",
+          "with": "1220MM",
+          "thicknes": "4.0/8.0/9.0 MM Etc.",
+          "tolerance": "±0.1 MM"
         },
-        {
-          "thicknes": "8 / 9 / 12 / 15 / 18"
-        },
-        {
-          "boardSize": "1220x2440"
-        },
-        {
-          "glue": "PVAC (Polyvinyl Acetate)"
-        },
-        {
-          "quality": "Visual Quality Standards from Grade A-C"
-        }
+        "glue": "PVAC (Polyvinyl Acetate)",
+        "grade": ["Grade A (Face And Back Good Condition Smooth"],
+        "payment": ["LC at Sight (recommended)", "T/T before Loading"]
+      },
+      "images": [
+        "/images/products/medium_density_board/medium_density_board_1.png",
+        "/images/products/medium_density_board/medium_density_board_2.jpg",
+        "/images/products/medium_density_board/medium_density_board_3.png",
+        "/images/products/medium_density_board/medium_density_board_4.jpg"
       ]
     },
     {
@@ -198,22 +310,24 @@
       "category": "high-moisture-resistance",
       "imageUrl": "/images/products/high_moisture_resistance/high_moisture_resistance_1.png",
       "description": "HMR Board is High Moisture Resistant MDF Board or also known as MDF Waterproof. Wood raw material is a combination of fiber and sawdust. Suitable for use in humid conditions or areas frequently exposed to water.",
-      "spec": [
-        {
-          "woodSpecies": "Core : Albasian Falcata (Sengon),Decklayer : Albasian Falcata (Sengon)/POLYESTER"
+      "spec": {
+        "compositionCore": { "woodSpecies": "Falcata Allbizia (SoftWood)" },
+        "weight": ["±9KG"],
+        "dimension": {
+          "length": "2440MM",
+          "with": "1220MM",
+          "thicknes": "4.0/8.0/9.0 MM Etc.",
+          "tolerance": "±0.1 MM"
         },
-        {
-          "thicknes": "8 / 9 / 12 / 15 / 18"
-        },
-        {
-          "boardSize": "1220x2440"
-        },
-        {
-          "glue": "PVAC (Polyvinyl Acetate)"
-        },
-        {
-          "quality": "Visual Quality Standards from Grade A-C"
-        }
+        "glue": "PVAC (Polyvinyl Acetate)",
+        "grade": ["Grade A (Face And Back Good Condition Smooth"],
+        "payment": ["LC at Sight (recommended)", "T/T before Loading"]
+      },
+      "images": [
+        "/images/products/medium_density_board/medium_density_board_1.png",
+        "/images/products/medium_density_board/medium_density_board_2.jpg",
+        "/images/products/medium_density_board/medium_density_board_3.png",
+        "/images/products/medium_density_board/medium_density_board_4.jpg"
       ]
     }
   ]

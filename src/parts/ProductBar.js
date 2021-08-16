@@ -32,6 +32,7 @@ export default function ProductBar({ selectItem }) {
                 onClick={() => {
                   selectItem(category);
                   setActive(category.slug);
+                  setDropdown(false);
                 }}
                 className="product_link"
               >

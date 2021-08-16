@@ -16,26 +16,31 @@
   },
   {
     "id": 4,
+    "slug": "polyester-blockboard",
+    "name": "Polyester Blockboard"
+  },
+  {
+    "id": 5,
     "slug": "plywood",
     "name": "Plywood"
   },
   {
-    "id": 5,
+    "id": 6,
     "slug": "polyester-plywood",
     "name": "Polyester Plywood"
   },
   {
-    "id": 6,
+    "id": 7,
     "slug": "phenolic-film-plywood",
     "name": "Phenolic Film Plywood"
   },
   {
-    "id": 7,
+    "id": 8,
     "slug": "medium-density-board",
     "name": "Medium Density Board"
   },
   {
-    "id": 8,
+    "id": 9,
     "slug": "high-moisture-resistance",
     "name": "High Moisture Resistance"
   }
