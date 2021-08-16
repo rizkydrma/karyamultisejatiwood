@@ -201,7 +201,7 @@
       "imageUrl": "/images/products/polyester_plywood/polyester_plywood_1.png",
       "description": "Polyester Plywood is constructed from a manufactured wood substrate that has been covered in polyester laminate. The polyester resin gives these others materials a very durable and attractive finish.",
       "spec": {
-        "composition": {
+        "compositionCore": {
           "woodSpecies": "Falcata Allbizia (SoftWood)",
           "composition": "Long Core And Short Core",
           "sanding": "All Sandered Calibration"
@@ -324,10 +324,9 @@
         "payment": ["LC at Sight (recommended)", "T/T before Loading"]
       },
       "images": [
-        "/images/products/medium_density_board/medium_density_board_1.png",
-        "/images/products/medium_density_board/medium_density_board_2.jpg",
-        "/images/products/medium_density_board/medium_density_board_3.png",
-        "/images/products/medium_density_board/medium_density_board_4.jpg"
+        "/images/products/high_moisture_resistance/high_moisture_resistance_1.png",
+        "/images/products/high_moisture_resistance/high_moisture_resistance_2.png",
+        "/images/products/high_moisture_resistance/high_moisture_resistance_3.png"
       ]
     }
   ]

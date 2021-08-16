@@ -32,11 +32,11 @@ export default function ProductDetailPage() {
               initial={{ opacity: 0, x: 300 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 1.25 }}
-              className="title"
+              className="title sm-center mt-3"
             >
               {Product.name}
             </motion.h1>
-            <div className="accordion">
+            <div className="accordion mt-3 sm-center">
               <motion.button
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ export default function ProductDetailPage() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 2 }}
-                className="description-2"
+                className="description"
               >
                 {Product.description}
               </motion.p>
@@ -74,11 +74,11 @@ export default function ProductDetailPage() {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="spec"
               >
-                <div className="subtitle w-600 ">1. Composition</div>
+                <div className="description w-600 ">1. Composition</div>
                 <div className="ml-1">
                   {spec.compositionCore && (
                     <div>
-                      <h5 className="subtitle">Core</h5>
+                      <h5 className="description">Core</h5>
                       <ul>
                         {spec.compositionCore.woodSpecies && (
                           <li className="description">
@@ -104,7 +104,7 @@ export default function ProductDetailPage() {
 
                   {spec.compositionFaceBack && (
                     <div>
-                      <h5 className="subtitle">Faceback</h5>
+                      <h5 className="description">Faceback</h5>
                       <ul>
                         {spec.compositionFaceBack.woodSpecies && (
                           <li className="description">
@@ -135,11 +135,14 @@ export default function ProductDetailPage() {
                   )}
                 </div>
 
-                <div className="subtitle" style={{ marginTop: '15px' }}>
+                <div
+                  className="description w-600"
+                  style={{ marginTop: '15px' }}
+                >
                   2. Weight : <span className="w-400">{spec.weight}</span>
                 </div>
-                <div className="subtitle" style={{ marginTop: '15px' }}>
-                  3. Dimension
+                <div className="description" style={{ marginTop: '15px' }}>
+                  <span className="w-600">3. Dimension</span>
                 </div>
                 <div className="ml-1">
                   <div className="d-flex gap">
@@ -173,10 +176,16 @@ export default function ProductDetailPage() {
                     </div>
                   </div>
                 </div>
-                <div className="subtitle w-600 " style={{ marginTop: '15px' }}>
+                <div
+                  className="description w-600 "
+                  style={{ marginTop: '15px' }}
+                >
                   4. Glue : <span className="w-400"> {spec.glue}</span>
                 </div>
-                <div className="subtitle w-600 " style={{ marginTop: '15px' }}>
+                <div
+                  className="description w-600 "
+                  style={{ marginTop: '15px' }}
+                >
                   5. Grade :
                   {spec.grade.map((grade, i) => (
                     <ul className="ml-1" key={i}>
@@ -184,7 +193,10 @@ export default function ProductDetailPage() {
                     </ul>
                   ))}
                 </div>
-                <div className="subtitle w-600 " style={{ marginTop: '15px' }}>
+                <div
+                  className="description w-600 "
+                  style={{ marginTop: '15px' }}
+                >
                   6. Payment :
                   {spec.payment.map((payment, i) => (
                     <ul className="ml-1" key={i}>

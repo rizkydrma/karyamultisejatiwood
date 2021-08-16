@@ -16,7 +16,7 @@ export default function LandingPage() {
       <Header />
       <Hero />
       <OurTimber />
-      <MostProducts data={landingPage.products} />
+      <MostProducts products={landingPage.products} />
       <Footer />
     </>
   );
