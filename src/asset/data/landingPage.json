@@ -17,8 +17,8 @@
     },
     {
       "id": "8",
-      "name": "Medium Density Board (MDF)",
-      "imageUrl": "/images/mostproducts/mdf.jpg"
+      "name": "Medium Density Fiberboard (MDF)",
+      "imageUrl": "/images/mostproducts/mdf.png"
     },
     {
       "id": "5",
@@ -27,12 +27,7 @@
     },
     {
       "id": "3",
-      "name": "Polyester Blockboard - Single Face",
-      "imageUrl": "/images/mostproducts/polyester-blockboard.jpg"
-    },
-    {
-      "id": "4",
-      "name": "Polyester Blockboard - Double Face",
+      "name": "Polyester Blockboard - (Single/Double Face)",
       "imageUrl": "/images/mostproducts/polyester-blockboard.jpg"
     },
     {

@@ -31,7 +31,7 @@ export default function OurTimber() {
           <img src={ImageAlbasia} alt="albasia" className="image-timber" />
           <div className="timber_desc">
             <h3>Albasia</h3>
-            <p>
+            <p className="text-justify">
               Albasia wood is also known by another name Latin name Albizia
               Falcata. Albasia wood has been a constructor’s choice due to its
               excellent properties. It is a very light yellowish timber, lighter
@@ -44,7 +44,7 @@ export default function OurTimber() {
           <img src={ImageMeranti} alt="meranti" className="image-timber" />
           <div className="timber_desc">
             <h3>Meranti</h3>
-            <p>
+            <p className="text-justify">
               Meranti is found in all types of panel products such as core
               stock, sub flooring, and decorative panels. Solid wood is commonly
               used in cabinetry, trim, and millwork. It is also used as a face

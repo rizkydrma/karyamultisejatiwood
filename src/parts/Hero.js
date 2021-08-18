@@ -40,10 +40,10 @@ export default function Hero() {
         animate="visible"
         transition={{ delay: 1, duration: 1 }}
       >
-        <h2 className="tagline">
+        <h2 className="tagline text-justify">
           <BrandName />, Wood Products and Outdoor Furniture Manufacturer
         </h2>
-        <h5 className="slug">
+        <h5 className="slug text-justify">
           CV Karya Multi Sejati is a factory company for Timber, Barecore,
           Blockboard and Plywood. CV Karya Multi Sejati located in west Java
           Indonesia.
@@ -74,7 +74,7 @@ export default function Hero() {
           effect="fade"
           speed={500}
           loop={true}
-          autoplay={{ delay: 1500 }}
+          autoplay={{ delay: 2500 }}
         >
           <SwiperSlide>
             <img src={ImageBareCore1} alt="" className="hero_image" />

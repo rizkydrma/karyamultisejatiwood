@@ -57,6 +57,10 @@ $aligns: left, center, right, justify;
   }
 }
 
+.pl-1 {
+  padding-left: 15px;
+}
+
 .px-5 {
   padding-right: 15px;
   padding-left: 15px;
@@ -211,6 +215,10 @@ $aligns: left, center, right, justify;
 .d-block {
   display: block;
   width: 100%;
+}
+
+.d-inline {
+  display: inline;
 }
 
 .d-flex {

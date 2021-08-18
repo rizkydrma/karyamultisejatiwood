@@ -54,7 +54,7 @@ export default function AboutUs() {
             Blockboard and Plywood. CV Karya Multi Sejati located in west Java
             Indonesia. Our Company as a wood manufacturer, Was built in 2000.
             The Company mainly produces as Falcata Albasia (sengon Indonesia)
-            Wood. Capacity: 3000 M3/Month Bare core, Block board and Plywood.
+            Wood. Capacity: 3000 M3/Month Barecore, Block board and Plywood.
           </p>
         </motion.div>
 
@@ -81,12 +81,11 @@ export default function AboutUs() {
             alt="gambar integritas"
             className="img-cover"
           />
-          <h3 className="subtitle text-center">Integritas</h3>
+          <h3 className="subtitle text-center">Integrity</h3>
           <p className="description text-center">
-            Integritas berarti mengatakan kebenaran, menepati janji, dan
-            memperlakukan orang lain dengan adil dan hormat. Integritas adalah
-            salah satu aset kita yang paling berharga. Itu tidak boleh
-            dikompromikan
+            Integrity means telling the truth, keeping promises, and treating
+            others with fairness and respect. Integrity is one of our most
+            valuable assets. It cannot be compromised.
           </p>
         </div>
         <div className="card_mission item column-6 row-1">
@@ -95,11 +94,11 @@ export default function AboutUs() {
             alt="gambar integritas"
             className="img-cover"
           />
-          <h3 className="subtitle text-center">Kualitas</h3>
+          <h3 className="subtitle text-center">Quality</h3>
           <p className="description text-center">
-            Kualitas ditunjukan dalam banyak cara dengan menjual dan mendukung
-            produk dan layanan yang menyenangkan pelanggan membangun lingkungan
-            kerja. memberikan hasil keuangan yang memenuhi harapan investor.
+            Quality is demonstrated in many ways by selling and supporting
+            products and services that delight customers build the environment
+            work. provide financial results that meet investors' expectations.
           </p>
         </div>
         <div className="card_mission item column-6 row-1">
@@ -108,12 +107,11 @@ export default function AboutUs() {
             alt="gambar integritas"
             className="img-cover"
           />
-          <h3 className="subtitle text-center">Komitmen</h3>
+          <h3 className="subtitle text-center">Commitment</h3>
           <p className="description text-center">
-            Komitmen itu penting dimana kami akan terus memberikan yang terbaik
-            kepada pelanggan dan investor kami sepanjang waktu kesempatan kita
-            untuk melayani hendaknya dipandang sebagai hak istimewa yang tidak
-            boleh diabaikan begitu saja.
+            Commitment is important where we will continue to provide the best
+            to our customers and investors all the time our opportunity to serve
+            should be viewed as a privilege that does not can simply be ignored.
           </p>
         </div>
         <div className="card_mission item column-6 row-1">
@@ -122,11 +120,11 @@ export default function AboutUs() {
             alt="gambar integritas"
             className="img-cover"
           />
-          <h3 className="subtitle text-center">Inovasi</h3>
+          <h3 className="subtitle text-center">Innovation</h3>
           <p className="description text-center">
-            Inovasi berarti menciptakan, merancagan, mengembangkan produk dan
-            layanan yang memiliki daya tarik tinggi di pasar dan memperkuat
-            preferensi pelanggan untuk proyek Karya Multi Sejati Wood.
+            Innovation means creating, designing, developing products and
+            services that have high attractiveness in the market and strengthen
+            customer preferences for the Karya Multi Sejati Wood project.
           </p>
         </div>
 

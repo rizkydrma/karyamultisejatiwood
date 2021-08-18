@@ -52,7 +52,7 @@ export default function Footer() {
           </li>
           <li className="item_product">
             <Button type="link" className="text-white" href="/product/8">
-              Medium Density Board (MDB)
+              Medium Density Fiberboard (MDF)
             </Button>
           </li>
           <li className="item_product">

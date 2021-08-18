@@ -66,7 +66,7 @@ export default function ProductDetailPage() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 2 }}
-                className="description-2 mt-3"
+                className="description-2 mt-3 text-justify"
               >
                 {Product.description}
               </motion.p>
@@ -84,58 +84,73 @@ export default function ProductDetailPage() {
                   {spec.compositionCore && (
                     <div>
                       <h5 className="description">Core</h5>
-                      <ul>
-                        {spec.compositionCore.woodSpecies && (
-                          <li className="description">
-                            <span className="w-500">Wood Species :</span>
-                            {spec.compositionCore.woodSpecies}
-                          </li>
-                        )}
-                        {spec.compositionCore.composition && (
-                          <li className="description">
-                            <span className="w-500">Composition :</span>
-                            {spec.compositionCore.composition}
-                          </li>
-                        )}
-                        {spec.compositionCore.sanding && (
-                          <li className="description">
-                            <span className="w-500">Sanding :</span>
-                            {spec.compositionCore.sanding}
-                          </li>
-                        )}
-                      </ul>
+                      <table className="table-specification">
+                        <tbody>
+                          {spec.compositionCore.woodSpecies && (
+                            <tr>
+                              <td className="description w-600">
+                                Wood Species
+                              </td>
+                              <td className="description ">
+                                : {spec.compositionCore.woodSpecies}
+                              </td>
+                            </tr>
+                          )}
+
+                          {spec.compositionCore.composition && (
+                            <tr>
+                              <td className="description w-600">Composition</td>
+                              <td className="description">
+                                : {spec.compositionCore.composition}
+                              </td>
+                            </tr>
+                          )}
+                          {spec.compositionCore.sanding && (
+                            <tr>
+                              <td className="description w-600">Sanding</td>
+                              <td className="description">
+                                : {spec.compositionCore.sanding}
+                              </td>
+                            </tr>
+                          )}
+                        </tbody>
+                      </table>
                     </div>
                   )}
 
                   {spec.compositionFaceBack && (
                     <div>
                       <h5 className="description">Faceback</h5>
-                      <ul>
-                        {spec.compositionFaceBack.woodSpecies && (
-                          <li className="description">
-                            <span className="w-500">Wood Species :</span>
-                            {spec.compositionFaceBack.woodSpecies}
-                          </li>
-                        )}
-                        {spec.compositionFaceBack.composition && (
-                          <li className="description">
-                            <span className="w-500">Composition :</span>
-                            {spec.compositionFaceBack.composition}
-                          </li>
-                        )}
-                        {spec.compositionFaceBack.sanding && (
-                          <li className="description">
-                            <span className="w-500">Sanding :</span>
-                            {spec.compositionFaceBack.sanding}
-                          </li>
-                        )}
-                        {spec.compositionFaceBack.totalPly && (
-                          <li className="description">
-                            <span className="w-500">Total Ply :</span>
-                            {spec.compositionFaceBack.totalPly}
-                          </li>
-                        )}
-                      </ul>
+                      <table className="table-specification">
+                        <tbody>
+                          {spec.compositionFaceBack.woodSpecies && (
+                            <tr className="description">
+                              <td className="w-600">Wood Species</td>
+                              <td>: {spec.compositionFaceBack.woodSpecies}</td>
+                            </tr>
+                          )}
+
+                          {spec.compositionFaceBack.composition && (
+                            <tr className="description">
+                              <td className="w-600">Composition</td>
+                              <td>: {spec.compositionFaceBack.composition}</td>
+                            </tr>
+                          )}
+                          {spec.compositionFaceBack.sanding && (
+                            <tr className="description">
+                              <td className="w-600">Sanding</td>
+                              <td>: {spec.compositionFaceBack.sanding}</td>
+                            </tr>
+                          )}
+
+                          {spec.compositionFaceBack.totalPly && (
+                            <tr className="description">
+                              <td className="w-600">Total Ply</td>
+                              <td>: {spec.compositionFaceBack.totalPly}</td>
+                            </tr>
+                          )}
+                        </tbody>
+                      </table>
                     </div>
                   )}
                 </div>
@@ -144,71 +159,93 @@ export default function ProductDetailPage() {
                   className="description w-600"
                   style={{ marginTop: '15px' }}
                 >
-                  2. Weight : <span className="w-400">{spec.weight}</span>
+                  <table className="table-specification">
+                    <tbody>
+                      <tr className="description">
+                        <td>2. Weight </td>
+                        <td>
+                          <span className="w-400 d-flex">
+                            :
+                            {spec.weight.map((w, i) => (
+                              <div key={i}>{` ` + w},</div>
+                            ))}
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
                 <div className="description" style={{ marginTop: '15px' }}>
                   <span className="w-600">3. Dimension</span>
                 </div>
                 <div className="ml-1">
                   <div className="d-flex gap">
-                    <div>
-                      {spec.dimension.length && (
-                        <div className="description">
-                          <span className="w-600">Length : </span>
-                          {spec.dimension.length}
-                        </div>
-                      )}
-                      {spec.dimension.with && (
-                        <div className="description">
-                          <span className="w-600">With : </span>
-                          {spec.dimension.with}
-                        </div>
-                      )}
-                    </div>
-                    <div>
-                      {spec.dimension.thicknes && (
-                        <div className="description">
-                          <span className="w-600">Thicknes : </span>
-                          {spec.dimension.thicknes}
-                        </div>
-                      )}
-                      {spec.dimension.tolerance && (
-                        <div className="description">
-                          <span className="w-600">Tolerance : </span>
-                          {spec.dimension.tolerance}
-                        </div>
-                      )}
-                    </div>
+                    <table className="table-specification">
+                      <tbody>
+                        <tr className="description">
+                          {spec.dimension.length && (
+                            <>
+                              <td className="w-600">Length</td>
+                              <td>: {spec.dimension.length}</td>
+                            </>
+                          )}
+                          {spec.dimension.with && (
+                            <>
+                              <td className="w-600 pl-1">With</td>
+                              <td>: {spec.dimension.with}</td>
+                            </>
+                          )}
+                        </tr>
+                        <tr className="description">
+                          {spec.dimension.thicknes && (
+                            <>
+                              <td className="w-600">Thicknes</td>
+                              <td>: {spec.dimension.thicknes}</td>
+                            </>
+                          )}
+                          {spec.dimension.tolerance && (
+                            <>
+                              <td className="w-600 pl-1">Tolerance</td>
+                              <td>: {spec.dimension.tolerance}</td>
+                            </>
+                          )}
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-                <div
-                  className="description w-600 "
-                  style={{ marginTop: '15px' }}
-                >
-                  4. Glue : <span className="w-400"> {spec.glue}</span>
-                </div>
-                <div
-                  className="description w-600 "
-                  style={{ marginTop: '15px' }}
-                >
-                  5. Grade :
-                  {spec.grade.map((grade, i) => (
-                    <ul className="ml-1" key={i}>
-                      <li className="w-400">{grade}</li>
-                    </ul>
-                  ))}
-                </div>
-                <div
-                  className="description w-600 "
-                  style={{ marginTop: '15px' }}
-                >
-                  6. Payment :
-                  {spec.payment.map((payment, i) => (
-                    <ul className="ml-1" key={i}>
-                      <li className="w-400">{payment}</li>
-                    </ul>
-                  ))}
-                </div>
+
+                <table className="table-specification">
+                  <tbody>
+                    <tr className="description">
+                      <td className="w-600">4. Glue</td>
+                      <td>: {spec.glue}</td>
+                    </tr>
+                    <tr className="description">
+                      <td className="w-600">5. Grade</td>
+                      <td>
+                        :
+                        {spec.grade.map((grade, i) => (
+                          <div key={i} className="d-inline">
+                            {` ` + grade}
+                            <br />
+                          </div>
+                        ))}
+                      </td>
+                    </tr>
+                    <tr className="description">
+                      <td className="w-600">6. Payment</td>
+                      <td>
+                        :
+                        {spec.payment.map((payment, i) => (
+                          <div key={i} className="d-inline">
+                            {` ` + payment} <br />
+                          </div>
+                        ))}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </motion.div>
             )}
           </div>
