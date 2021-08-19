@@ -58,7 +58,7 @@ $aligns: left, center, right, justify;
 }
 
 .pl-1 {
-  padding-left: 15px;
+  padding-left: 50px;
 }
 
 .px-5 {
@@ -236,10 +236,6 @@ $aligns: left, center, right, justify;
   flex-direction: column;
 }
 
-.gap {
-  gap: 30px;
-}
-
 .border-bottom {
   border-bottom: 1px solid rgba($primaryGreen, 0.25);
 }
@@ -256,4 +252,8 @@ $aligns: left, center, right, justify;
     text-align: left;
     justify-content: flex-start;
   }
+}
+
+.gap {
+  gap: 20px;
 }

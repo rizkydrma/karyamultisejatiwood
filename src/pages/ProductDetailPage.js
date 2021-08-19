@@ -179,39 +179,21 @@ export default function ProductDetailPage() {
                   <span className="w-600">3. Dimension</span>
                 </div>
                 <div className="ml-1">
-                  <div className="d-flex gap">
-                    <table className="table-specification">
-                      <tbody>
-                        <tr className="description">
-                          {spec.dimension.length && (
-                            <>
-                              <td className="w-600">Length</td>
-                              <td>: {spec.dimension.length}</td>
-                            </>
-                          )}
-                          {spec.dimension.with && (
-                            <>
-                              <td className="w-600 pl-1">With</td>
-                              <td>: {spec.dimension.with}</td>
-                            </>
-                          )}
-                        </tr>
-                        <tr className="description">
-                          {spec.dimension.thicknes && (
-                            <>
-                              <td className="w-600">Thicknes</td>
-                              <td>: {spec.dimension.thicknes}</td>
-                            </>
-                          )}
-                          {spec.dimension.tolerance && (
-                            <>
-                              <td className="w-600 pl-1">Tolerance</td>
-                              <td>: {spec.dimension.tolerance}</td>
-                            </>
-                          )}
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div className="dimension">
+                    <span className="description w-600">Length</span>
+                    <span className="description">
+                      : {spec.dimension.length}
+                    </span>
+                    <span className="description w-600">With</span>
+                    <span className="description">: {spec.dimension.with}</span>
+                    <span className="description w-600">Thicknes</span>
+                    <span className="description">
+                      : {spec.dimension.thicknes}
+                    </span>
+                    <span className="description w-600">Tolerance</span>
+                    <span className="description">
+                      : {spec.dimension.tolerance}
+                    </span>
                   </div>
                 </div>
 
