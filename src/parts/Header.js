@@ -36,7 +36,7 @@ export default function Header() {
         transition={{ duration: 1, type: 'spring', stifness: 10 }}
       >
         <li className="nav_item">
-          <Button type="link" href="/" className="nav_link">
+          <Button type="link" href="/home" className="nav_link">
             Home
           </Button>
         </li>

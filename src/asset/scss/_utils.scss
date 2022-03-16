@@ -127,6 +127,7 @@ $aligns: left, center, right, justify;
 .btn-lg {
   border-radius: 5px;
   padding: 0.5rem 1rem;
+  margin-top: 7px;
 }
 .btn-sm {
   border-radius: 5px;
@@ -138,6 +139,16 @@ $aligns: left, center, right, justify;
   i {
     margin: 0 5px;
   }
+}
+
+.btn-primary {
+  background-color: #2b364c;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #607ff2;
+  color: white;
 }
 
 .accordion {

@@ -258,7 +258,7 @@
       "id": 8,
       "name": "Medium Density Fiberboard (MDF)",
       "category": "medium-density-fiberboard",
-      "imageUrl": "/images/products/medium_density_board/medium_density_board_1.png",
+      "imageUrl": "/images/products/medium_density_board/medium_density_board_1.jpg",
       "description": "Medium Density Fiberboard (MDF) is a processed wood material made from a collection of wood with a small diameter. The collection of small diameter wood is then washed, then boiled at a certain temperature to form paper pulp. Next, the pulp is glued and waxed.",
       "spec": {
         "compositionCore": { "woodSpecies": "Falcata Allbizia (SoftWood)" },
@@ -274,10 +274,9 @@
         "payment": ["LC at Sight (recommended)", "T/T before Loading"]
       },
       "images": [
-        "/images/products/medium_density_board/medium_density_board_1.png",
-        "/images/products/medium_density_board/medium_density_board_2.jpg",
-        "/images/products/medium_density_board/medium_density_board_3.png",
-        "/images/products/medium_density_board/medium_density_board_4.jpg"
+        "/images/products/medium_density_board/medium_density_board_1.jpg",
+        "/images/products/medium_density_board/medium_density_board_2.png",
+        "/images/products/medium_density_board/medium_density_board_3.jpg"
       ]
     },
     {
