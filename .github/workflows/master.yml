@@ -1,0 +1,23 @@
+name: Actions
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "This job is now running on a ${{ runner.os }} server!"
+      - uses: actions/checkout@v1
+      - name: Run a one-line script 
+        run: echo Hello, world!
+      - name: List files in the repository 
+        run: |
+          ls ${{ github.workspace }}
+      - name: Run a multi-line script 
+        run: |
+          echo Add other actions to build, 
+          echo Yet another actions to build, 
+          echo test, and deploy your project.
